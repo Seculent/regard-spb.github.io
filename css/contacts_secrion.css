@@ -7,8 +7,7 @@
 }
 
 .contacts-section .container {
-    width: 1400px; /* Меняем с 1400px на 100% */
-    max-width: 1400px; /* Максимальная ширина */
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -94,39 +93,19 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     height: 400px;
-    width: 100%; /* Добавляем */
-    box-sizing: border-box; /* Добавляем */
-    overflow: hidden; /* Предотвращает вылазивание */
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 #map {
     height: 100%;
-    width: 100%; /* Добавляем */
+    width: 100%;
     border-radius: 8px;
     overflow: hidden;
     border: 2px solid rgba(255, 255, 255, 0.1);
-    box-sizing: border-box; /* Добавляем */
+    box-sizing: border-box;
 }
-
-/* Темная тема для Яндекс.Карт */
-/* .ymaps-2-1-79-map {
-    filter: none;
-}
-
-.ymaps-2-1-79-control__toolbar,
-.ymaps-2-1-79-control__control {
-    background: rgba(0, 0, 0, 0.9) !important;
-}
-
-.ymaps-2-1-79-button {
-    background: rgba(0, 0, 0, 0.9) !important;
-    color: #fff !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-.ymaps-2-1-79-button:hover {
-    background: rgba(238, 147, 147, 0.2) !important;
-} */
 
 /* Адаптивность */
 /* Улучшенная адаптивность для контактов */
@@ -170,43 +149,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .contacts-section {
-        padding: 40px 0;
-        margin-top: 30px;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
-    
-    .map-container {
-        height: 300px;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .contact-info {
-        gap: 15px;
-    }
-    
-    .contact-item {
-        padding: 15px;
-        flex-direction: row; /* Сохраняем горизонтальное расположение */
-        align-items: center;
-    }
-    
-    .contact-icon {
-        font-size: 20px;
-        margin-right: 15px;
-        min-width: 25px;
-    }
-    
-    .contact-details p {
-        font-size: 1rem;
-    }
-}
 
 @media (max-width: 480px) {
     .contacts-section {
@@ -288,21 +230,43 @@
         transform-origin: center;
     }
 }
-
-/* Гарантируем что контейнер не будет шире экрана */
-.contacts-section .container {
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-/* Улучшаем читаемость на маленьких экранах */
 @media (max-width: 480px) {
-    .contact-details p {
-        line-height: 1.4;
+    .contacts-section {
+        padding: 30px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+    
+    .map-container {
+        height: 250px;
+        padding: 15px;
+        margin-bottom: 15px;
     }
     
     .contact-item {
-        margin-bottom: 0;
+        padding: 12px 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .contact-icon {
+        font-size: 18px;
+        margin-bottom: 5px;
+        min-width: 22px;
+    }
+    
+    .contact-details p {
+        font-size: 0.9rem;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+    
+    .contact-item:hover {
+        transform: translateY(-2px);
     }
     
     .contact-info {
@@ -310,26 +274,10 @@
     }
 }
 
-@media (max-width: 480px) {
-    .contact-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-    }
-    
-    .contact-icon {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-    
-    .contact-item:hover {
-        transform: translateY(-2px); /* Изменяем направление анимации */
-    }
-}
 
 /* Гарантируем, что ничего не вылазит за пределы */
 .contacts-section {
-    overflow: hidden; /* Важно! */
+    overflow: hidden;
     width: 100%;
     box-sizing: border-box;
 }
