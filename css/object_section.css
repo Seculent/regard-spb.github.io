@@ -7,20 +7,6 @@
     font-size: 31px;
 }
 
-.trending .see-all {
-    color: #fff;
-    background: #000;
-    border-radius: 5px;
-    padding: 12px 32px;
-    float: right;
-    display: block;
-    transition: all 500ms ease;
-}
-
-.trending .see-all:hover {
-    transform: scale(1.1);
-}
-
 .trending .games {
     display: flex;
     justify-content: space-between;
@@ -29,7 +15,6 @@
     gap: 10px;
 }
 
-/* Для наведения на картинку и текста поверх нее */
 .image-frame {
     width: 300px;
     height: 200px;
@@ -39,7 +24,7 @@
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative; /* важно для позиционирования текста */
+    position: relative;
     transition: all 0.3s ease;
 }
 
@@ -50,7 +35,6 @@
     transition: transform 0.5s ease-out;
 }
 
-/* Контейнер для текста */
 .image-text {
     position: absolute;
     bottom: 0;
@@ -59,13 +43,11 @@
     padding: 15px;
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: white;
-    opacity: 0; /* initially hidden */
+    opacity: 0;
     transform: translateY(100%);
     transition: all 0.4s ease;
-    z-index: 2;
 }
 
-/* Эффекты при наведении */
 .image-frame:hover .framed-image {
     transform: scale(1.1);
 }

@@ -7,18 +7,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-background: #718ABF;
-background: radial-gradient(circle, rgba(113, 138, 191, 1) 0%, rgba(43, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(113, 138, 191, 1) 0%, rgba(43, 0, 0, 1) 100%);
 }
 
 a {
     text-decoration: none;
-}
-
-img {
-    width: 100%;
 }
 
 .container {
@@ -42,7 +35,6 @@ header .logo{
 
 .logotype-img {
     max-width: 14rem;
-    gap: 2.4rem;
     border-radius: 10px;
     box-shadow: 1px 5px 15px #000;
 }
@@ -57,13 +49,6 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
-    position: relative;
-}
-
-header nav ul li {
-    display: inline-block;
-
 }
 
 header nav ul li.active::after {
